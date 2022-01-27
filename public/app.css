@@ -1,0 +1,140 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #393b44;
+    color: #f1f3f8;
+}
+.back{
+    font-size: 0.6em;
+    text-decoration: none;
+    background-color: #8d93ab;
+    color: #d6e0f0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.back:hover{
+    cursor: pointer;
+    background-color: #d6e0f0;
+    color: #8d93ab;
+}
+.home-heading{
+    color: #f1f3f8;
+    font-size: 2.5em;
+}
+/* home.ejs */
+.home-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    border: 0.1px solid #8d93ab;
+    border-radius: 3px;
+    font-size: 1.2em;
+    max-width: 50%;
+    padding: 10px;
+    margin-bottom: 2em;
+    text-decoration: none;
+    color: #ECDBBA;
+}
+.card:hover{
+    box-shadow: 0px 0px 2px #e0e2db;
+    transform: scale(1.02);
+}
+.card h2{
+    text-align: center;
+    color: #f1f3f8;
+    
+}
+.card p{
+    color: #d6e0f0;
+}
+
+/*new.ejs */
+.new-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+}
+.new-blog form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.new-blog form input, textarea{
+    background-color: #393b44;
+    border: 1px solid #f1f3f8;
+    color: #f1f3f8;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.8em;
+}
+.new-blog .space-div{
+    margin: 20px;
+}
+button{
+    background-color: #8d93ab;
+    color: #d6e0f0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #d6e0f0;
+    color: #8d93ab;
+}
+
+/* edit.ejs */
+
+.edit-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.edit-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* show.ejs */
+.show-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}

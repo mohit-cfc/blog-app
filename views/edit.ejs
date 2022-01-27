@@ -1,0 +1,16 @@
+<%- include('partials/head') %>
+<body>
+    <div class="edit-section">
+        <h1>Edit <%=blog.title %> </h1>
+        <form class="edit-form" action="/blogs/<%=blog._id%>?_method=PATCH" method="post">
+            <div class="space-div">
+                <label for="description" style="display: block;">Blog:</label>
+                <textarea name="description" id="description" cols="40" rows="20"><%=blog.description %> </textarea>
+            </div>
+            <button>Submit</button>
+        </form>
+        <a class="back" href="/blogs/<%=blog._id%> ">Back</a>
+    </div>
+
+</body>
+</html>

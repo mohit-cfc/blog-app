@@ -1,0 +1,18 @@
+<%- include('partials/head') %> 
+<body class="home-body">
+    <h1 class="home-heading">Blog App</h1>
+    <% for(let blog of blogs){ %>
+        <a class="card" href="/blogs/<%= blog._id %>">
+        <div>
+            <h2><%= blog.title %></h2>
+            <p><%=blog.description.substr(0,200) %> </p>
+        </div>
+        </a>
+
+    <% } %>  
+    <form action="/blogs/new">
+        <button>Create New Blog</button>
+    </form>
+</body>
+<script src="/app.js"></script>
+</html>
